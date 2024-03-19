@@ -1,0 +1,242 @@
+/* epilogue-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/epilogue-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/epilogue-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/epilogue-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+    display: flex;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+}
+main {
+    flex-shrink: 1;
+}
+body {
+    background-color: #fafafa;
+}
+.conatiner {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding: 21px 40px 60px 40px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.site-logo {
+}
+.sitenav {
+    margin-right: auto;
+}
+.site-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 60px;
+}
+.site-item {
+    position: relative;
+}
+.site-item:hover .dropdown-list {
+    visibility: visible;
+    opacity: 1;
+}
+.site-item:hover .dropdown-small {
+    visibility: visible;
+    opacity: 1;
+}
+.site-link {
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #686868;
+    &:active {
+        color: #151515;
+    }
+}
+
+.fa-solid {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.dropdown-small {
+    position: absolute;
+    right: -50px;
+}
+
+.dropdown-list {
+    width: 153px;
+    height: 160px;
+    box-shadow: 0px 10px 40px 0px #00000026;
+    position: absolute;
+    top: 30px;
+    left: -70px;
+    background-color: #fff;
+    color: #686868;
+
+    border-radius: 15px;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+}
+.dropdown-small {
+    position: absolute;
+    width: 153px;
+    height: 160px;
+    box-shadow: 0px 10px 40px 0px #00000026;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background-color: #fff;
+    color: #686868;
+    border-radius: 15px;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+}
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+.dropdown-link {
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.header-btn {
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #686868;
+    padding: 13px 22px;
+    border: 1.5px solid #686868;
+    border-radius: 15px;
+    &:active {
+        color: #151515;
+    }
+}
+
+.site-regstration {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #686868;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 60px;
+    padding-bottom: 130px;
+}
+.container {
+}
+.main__information {
+    width: 540px;
+    height: 640px;
+}
+.main__title {
+    margin-top: 100px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1.1111111640930176px;
+    margin-bottom: 48px;
+    color: #151515;
+}
+.main__info {
+    width: 445px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #686868;
+    margin-bottom: 50px;
+}
+.main-btn {
+    font-family: "Epilogue", sans-serif;
+
+    padding: 15px 30px;
+    background-color: #151515;
+    color: #fff;
+    border-radius: 15px;
+    border: 1.5px solid transparent;
+    margin-bottom: 120px;
+    &:active {
+        background-color: #fff;
+        color: #151515;
+        border-color: #151515;
+    }
+}
+.main__information-img {
+    width: 480px;
+}
